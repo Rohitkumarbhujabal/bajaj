@@ -19,7 +19,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedJson = JSON.parse(jsonInput);
-      const res = await fetch('https://bajaj-10ii.onrender.com', {
+      const res = await fetch('https://bajaj-10ii.onrender.com/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

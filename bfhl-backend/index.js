@@ -5,7 +5,9 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://master--jade-chaja-2b853e.netlify.app/',
+}));
 app.use(bodyParser.json());
 
 app.post('/bfhl', (req, res) => {
